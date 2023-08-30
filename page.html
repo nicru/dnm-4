@@ -29,12 +29,12 @@
             select("#cargando").addClass("esconde");
             console.log(results);
             results.forEach(r => {
-               stroke(0,255,0,200);
-               strokeWeight(5);
+               stroke(255,0,0,200);
+               strokeWeight(3);
                noFill();
                rect(r.x,r.y,r.width,r.height);
                noStroke();
-               fill(0,255,0,245);
+               fill(255,0,0,245);
                textSize(24);
                text(r.label,  r.x+10, r.y+25);
             })
